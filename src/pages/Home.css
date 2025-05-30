@@ -88,7 +88,7 @@
             margin: 0 auto 3rem;
             border-radius: 50%;
             background: linear-gradient(45deg, #ff1493, #00ffff);
-            background-image: url('./assets/profile.jpg');
+
             background-size: cover;
             background-position: start;
             padding: 4px;
