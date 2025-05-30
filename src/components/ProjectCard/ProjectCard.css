@@ -60,7 +60,7 @@
 
 .project-description {
     display: -webkit-box;
-    display: box; /* Add the standard display property for compatibility */
+    display: box;
     -webkit-box-orient: vertical;
     box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -113,8 +113,6 @@
 }
 
 /* Estilos para el diálogo expandido */
-
-
 .expanded-project-card {
     position: fixed;
     top: 50%;
@@ -125,7 +123,9 @@
     border-radius: 20px;
     padding: 0;
     width: 60%;
-    
+    max-width: 1200px;
+    max-height: 90vh;
+    overflow-y: auto;
     backdrop-filter: blur(10px);
     box-shadow: 0 25px 50px rgba(0, 255, 255, 0.3);
     animation: startExpandedProjectCard 0.5s ease;
@@ -140,7 +140,6 @@
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
     }
-    
 }
 
 .expanded-project-card::backdrop {
@@ -158,7 +157,6 @@
         opacity: 1;
         backdrop-filter: blur(5px);
     }
-    
 }
 
 .dialog-content {
@@ -264,6 +262,7 @@
     line-height: 1.6;
     margin: 0;
     align-self: start;
+    overflow-y: auto;
 }
 
 .dialog-buttons {
@@ -281,10 +280,50 @@
     transition: all 0.3s ease;
 }
 
-/* Responsive para pantallas más pequeñas */
-@media (max-width: 800px) {
+/* RESPONSIVE BREAKPOINTS */
+
+/* Tablets grandes y laptops pequeñas */
+@media (max-width: 1024px) {
+    .expanded-project-card {
+        width: 75%;
+    }
+    
     .dialog-content {
-        min-width: 90vw;
+        grid-template-columns: 300px 1fr;
+        gap: 1rem;
+    }
+    
+    .dialog-image {
+        height: 300px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    .project-card {
+        max-width: 100%;
+        padding: 1.2rem;
+    }
+    
+    .project-title {
+        font-size: 1.1rem;
+    }
+    
+    .project-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .project-buttons .btn {
+        padding: 0.7rem;
+        font-size: 0.85rem;
+    }
+    
+    .expanded-project-card {
+        width: 85%;
+    }
+    
+    .dialog-content {
         grid-template-columns: 1fr;
         grid-template-areas: 
             "header"
@@ -292,14 +331,170 @@
             "image"
             "text"
             "buttons";
-    }
-    
-    .dialog-tech {
-        flex-direction: row;
-        flex-wrap: wrap;
+        padding: 1.5rem;
     }
     
     .dialog-image {
-        height: 300px;
+        height: 250px;
+        aspect-ratio: 16/9;
+    }
+    
+    .dialog-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Móviles grandes */
+@media (max-width: 600px) {
+    .project-card {
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    
+    .project-card:hover {
+        transform: scale(1.02);
+    }
+    
+    .project-title {
+        font-size: 1rem;
+    }
+    
+    .project-tech {
+        font-size: 0.8rem;
+    }
+    
+    .project-description {
+        font-size: 0.85rem;
+    }
+    
+    .project-buttons .btn {
+        padding: 0.6rem;
+        font-size: 0.8rem;
+    }
+    
+    .view-more-button {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.7rem;
+    }
+    
+    .expanded-project-card {
+        width: 95%;
+        max-height: 95vh;
+        border-radius: 15px;
+    }
+    
+    .dialog-content {
+        padding: 1.2rem;
+        gap: 1rem;
+    }
+    
+    .close-button {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+        top: 0.8rem;
+        right: 0.8rem;
+    }
+    
+    .dialog-title {
+        font-size: 1.3rem;
+    }
+    
+    .dialog-year {
+        font-size: 0.8rem;
+    }
+    
+    .dialog-image {
+        height: 200px;
+    }
+    
+    .tech-tag {
+        font-size: 0.7rem;
+        padding: 0.25rem 0.6rem;
+    }
+    
+    .dialog-description {
+        font-size: 0.9rem;
+        max-height: 300px;
+    }
+    
+    .dialog-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .dialog-buttons .btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 400px) {
+    .project-card {
+        padding: 0.8rem;
+    }
+    
+    .project-year {
+        font-size: 0.75rem;
+    }
+    
+    .project-title {
+        font-size: 0.95rem;
+    }
+    
+    .project-tech {
+        font-size: 0.75rem;
+    }
+    
+    .project-description {
+        font-size: 0.8rem;
+    }
+    
+    .dialog-content {
+        padding: 1rem;
+    }
+    
+    .dialog-title {
+        font-size: 1.1rem;
+    }
+    
+    .dialog-image {
+        height: 180px;
+    }
+    
+    .tech-tag {
+        font-size: 0.65rem;
+        padding: 0.2rem 0.5rem;
+    }
+    
+    .dialog-description {
+        font-size: 0.85rem;
+    }
+    
+    .dialog-buttons .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Ajustes adicionales para orientación horizontal en móviles */
+@media (max-height: 600px) and (orientation: landscape) {
+    .expanded-project-card {
+        max-height: 95vh;
+        width: 90%;
+    }
+    
+    .dialog-content {
+        grid-template-columns: 300px 1fr;
+        grid-template-areas: 
+            "header header"
+            "image text"
+            "tech tech"
+            "buttons buttons";
+    }
+    
+    .dialog-image {
+        height: 200px;
     }
 }

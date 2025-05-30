@@ -1,13 +1,12 @@
 import { useLanguage } from "../../contexts/LanguageContext";
+import { useState } from "react";
 import LanguageSelector from "../LanguageSelector/LanguageSelector"
 
 import './TopBar.css'
 
-
 export default function TopBar() {
-
     const { t } = useLanguage();
-
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const text = JSON.parse(t('topBar'));
 
     function handleAudioButtonClick() {
@@ -27,21 +26,45 @@ export default function TopBar() {
         }
     }
 
-return(
-    <nav className="navbar">
-        <div className="nav-container">
-            <div className="logo">&lt;KUKE-DEV/&gt;</div>
-            <ul className="nav-links">
-                <li><a href='#about'>{text[0]}</a></li>
-                <li><a href="#projects">{text[1]}</a></li>
-                <li><a href="#skills">{text[2]}</a></li>
-            </ul>
-            <ul className="nav-additional">
-                <button className="audio-button" onClick={handleAudioButtonClick}> ▶ </button>
-                <LanguageSelector />
-            </ul>
-        <audio id="audio" src="/The-Son-of-Flynn.mp3" autoplay loop></audio>
-        </div>
-    </nav>
-)
+    function toggleMenu() {
+        setIsMenuOpen(!isMenuOpen);
+    }
+
+    function closeMenu() {
+        setIsMenuOpen(false);
+    }
+
+    return(
+        <nav className="navbar">
+            <div className="nav-container">
+                <div className="logo">&lt;KUKE-DEV/&gt;</div>
+                
+                {/* Menu hamburguesa */}
+                <button 
+                    className={`hamburger ${isMenuOpen ? 'active' : ''}`}
+                    onClick={toggleMenu}
+                    aria-label="Toggle menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                {/* Navigation links */}
+                <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+                    <li><a href='#about' onClick={closeMenu}>{text[0]}</a></li>
+                    <li><a href="#projects" onClick={closeMenu}>{text[1]}</a></li>
+                    <li><a href="#skills" onClick={closeMenu}>{text[2]}</a></li>
+                </ul>
+
+                {/* Additional nav items */}
+                <ul className={`nav-additional ${isMenuOpen ? 'active' : ''}`}>
+                    <button className="audio-button" onClick={handleAudioButtonClick}> ▶ </button>
+                    <LanguageSelector />
+                </ul>
+                
+                <audio id="audio" src="/The-Son-of-Flynn.mp3" autoPlay loop></audio>
+            </div>
+        </nav>
+    )
 }

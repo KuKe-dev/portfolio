@@ -45,28 +45,28 @@ export default function ContactForm() {
         <>
             <form onSubmit={submitForm} id="formulario-contacto" className="synthwave-form">
                 <div className="form-group">
-                    <label htmlFor="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required />
+                    <label htmlFor="nombre">Nombre*:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder='Ingresa tu nombre' required />
                 </div>
                 
                 <div className="form-group">
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" id="email" name="email" required />
+                    <label htmlFor="email">Email*:</label>
+                    <input type="email" id="email" name="email" placeholder='Ingresa tu email' required />
                 </div>
                 
                 <div className="form-group">
                     <label htmlFor="asunto">Asunto:</label>
-                    <input type="text" id="asunto" name="asunto" />
+                    <input type="text" id="asunto" name="asunto" placeholder='Ingresa el asunto' />
                 </div>
                 
                 <div className="form-group">
-                    <label htmlFor="mensaje">Mensaje:</label>
+                    <label htmlFor="mensaje">Mensaje*:</label>
                     <textarea id="mensaje" name="mensaje" required></textarea>
                 </div>
                 
                 <div className="button-group">
                     <button type="submit" className="btn-primary">Enviar Mensaje</button>
-                    <button type="button" onClick={() => document.getElementById("dialog")?.close()} className="btn-secondary">
+                    <button type="button" onClick={() => document.getElementById('formulario-contacto').reset() } className="btn-secondary">
                         Cancelar
                     </button>
                 </div>
