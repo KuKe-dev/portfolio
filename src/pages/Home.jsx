@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import './Home.css'
-import avatar from '../assets/avatar.png'
+import avatar from '../../public/Avatar.png'
 import { useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext.jsx';
 import LanguageSelector from '../components/LanguageSelector/LanguageSelector.jsx';
