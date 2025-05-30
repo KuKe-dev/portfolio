@@ -1,0 +1,54 @@
+:root {
+    scroll-behavior: smooth;
+    
+}
+@font-face {
+    font-family: '3D Font';
+    src: url('./assets/Franchise.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: '80s Font';
+    src: url('./assets/BAUHS93.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* CUSTOM SCROLLBAR STYLES */
+        /* Para navegadores Webkit (Chrome, Safari, Edge) */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: linear-gradient(180deg, #0a0a23 0%, #17072c 100%);
+            border-radius: 10px;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, #ff1493, #00ffff);
+            border-radius: 10px;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            box-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            box-shadow: 0 0 20px rgba(255, 20, 147, 0.8);
+            transform: scale(1.1);
+        }
+
+        ::-webkit-scrollbar-thumb:active {
+            background: linear-gradient(45deg, #9932cc, #ff1493);
+        }
+
+        /* Scrollbar corner */
+        ::-webkit-scrollbar-corner {
+            background: #0a0a23;
+        }
+        

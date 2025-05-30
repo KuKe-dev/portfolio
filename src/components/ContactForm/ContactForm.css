@@ -1,0 +1,350 @@
+/* Synthwave Contact Form Styles */
+.synthwave-form {
+    background: linear-gradient(135deg, 
+        rgba(20, 20, 40, 0.95) 0%, 
+        rgba(40, 20, 60, 0.9) 50%, 
+        rgba(20, 20, 40, 0.95) 100%);
+    border: 2px solid #ff00ff;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 
+        0 0 20px rgba(255, 0, 255, 0.3),
+        0 0 40px rgba(0, 255, 255, 0.2),
+        inset 0 0 20px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    font-family: 'Courier New', monospace;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Estilos específicos para el modal/dialog */
+.dialog .synthwave-form {
+    max-width: 500px;
+    width: 90vw;
+    padding: 2rem;
+}
+
+/* Estilos para cuando está como sección independiente */
+section .synthwave-form {
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.synthwave-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, 
+        transparent 49%, 
+        rgba(255, 0, 255, 0.03) 50%, 
+        transparent 51%);
+    background-size: 20px 20px;
+    pointer-events: none;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+
+.synthwave-form label {
+    display: block;
+    color: #00ffff;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.synthwave-form input,
+.synthwave-form textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #ff00ff;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 
+        0 0 10px rgba(255, 0, 255, 0.2),
+        inset 0 0 10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.synthwave-form input:focus,
+.synthwave-form textarea:focus {
+    outline: none;
+    border-color: #00ffff;
+    box-shadow: 
+        0 0 20px rgba(0, 255, 255, 0.4),
+        0 0 40px rgba(255, 0, 255, 0.2),
+        inset 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.synthwave-form input::placeholder,
+.synthwave-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.synthwave-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.button-group {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.synthwave-form button {
+    padding: 0.6rem 1.5rem;
+    border: 2px solid;
+    border-radius: 25px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    min-width: 120px;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #ff00ff, #ff0080);
+    border-color: #ff00ff;
+    color: #ffffff;
+    box-shadow: 
+        0 0 20px rgba(255, 0, 255, 0.4),
+        0 4px 15px rgba(255, 0, 128, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #ff0080, #ff00ff);
+    box-shadow: 
+        0 0 30px rgba(255, 0, 255, 0.6),
+        0 6px 20px rgba(255, 0, 128, 0.4);
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background: linear-gradient(45deg, #00ffff, #0080ff);
+    border-color: #00ffff;
+    color: #000000;
+    box-shadow: 
+        0 0 20px rgba(0, 255, 255, 0.4),
+        0 4px 15px rgba(0, 128, 255, 0.3);
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(45deg, #0080ff, #00ffff);
+    box-shadow: 
+        0 0 30px rgba(0, 255, 255, 0.6),
+        0 6px 20px rgba(0, 128, 255, 0.4);
+    transform: translateY(-3px);
+}
+
+.synthwave-form button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.2), 
+        transparent);
+    transition: left 0.5s;
+}
+
+.synthwave-form button:hover::before {
+    left: 100%;
+}
+
+
+/* Message Styles */
+.message {
+    position: fixed;
+    top: 92%;
+    left: 5%;
+    transform: translate(0%, -50%);
+    z-index: 1000;
+    max-width: 400px;
+    border-radius: 12px;
+    padding: 1rem;
+    font-family: 'Courier New', monospace;
+    animation: slideInRight 0.5s ease-out, pulse 2s ease-in-out infinite;
+    opacity: 1;
+}
+
+.message-success {
+    background: linear-gradient(135deg, 
+        rgba(0, 255, 128, 0.9) 0%, 
+        rgba(0, 128, 255, 0.8) 100%);
+    border: 2px solid #00ff80;
+    box-shadow: 
+        0 0 20px rgba(0, 255, 128, 0.4),
+        0 0 40px rgba(0, 255, 128, 0.2);
+}
+
+.message-error {
+    background: linear-gradient(135deg, 
+        rgba(255, 0, 128, 0.9) 0%, 
+        rgba(255, 80, 0, 0.8) 100%);
+    border: 2px solid #ff0080;
+    box-shadow: 
+        0 0 20px rgba(255, 0, 128, 0.4),
+        0 0 40px rgba(255, 0, 128, 0.2);
+}
+
+.message-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.message-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.message-text {
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Animations */
+@keyframes slideInRight {
+    from {
+        transform: translate(-100%, -50%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, -50%);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 
+            0 0 20px rgba(255, 0, 255, 0.4),
+            0 0 40px rgba(0, 255, 255, 0.2);
+    }
+    50% {
+        box-shadow: 
+            0 0 30px rgba(255, 0, 255, 0.6),
+            0 0 60px rgba(0, 255, 255, 0.3);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .synthwave-form {
+        padding: 1.2rem;
+        margin: 0.5rem;
+    }
+    
+    .dialog .synthwave-form {
+        width: 95vw;
+        padding: 1.5rem;
+    }
+    
+    .button-group {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+    
+    .synthwave-form button {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .message {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        max-width: none;
+    }
+    
+    .synthwave-form input,
+    .synthwave-form textarea {
+        font-size: 16px; /* Evita zoom en iOS */
+    }
+}
+
+@media (max-width: 480px) {
+    .synthwave-form {
+        padding: 1rem;
+    }
+    
+    .dialog .synthwave-form {
+        padding: 1.2rem;
+    }
+    
+    .synthwave-form label {
+        font-size: 0.8rem;
+    }
+    
+    .synthwave-form button {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Dark mode compatibility */
+@media (prefers-color-scheme: dark) {
+    .synthwave-form {
+        background: linear-gradient(135deg, 
+            rgba(10, 10, 30, 0.98) 0%, 
+            rgba(30, 10, 50, 0.95) 50%, 
+            rgba(10, 10, 30, 0.98) 100%);
+    }
+}
+
+/* Dialog/Modal specific styles */
+.dialog {
+    background: transparent;
+    border: none;
+    padding: 0;
+    max-width: none;
+    max-height: none;
+}
+
+.dialog::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.dialog .synthwave-form {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Cuando está como sección independiente, centrarlo */
+section .synthwave-form {
+    display: block;
+    margin: 2rem auto;
+}

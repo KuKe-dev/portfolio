@@ -1,0 +1,136 @@
+.navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #00ffff;
+            z-index: 50;
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 7rem;
+            background: linear-gradient(45deg, #ff1493, #00ffff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            margin-right: 0rem;
+        }
+
+        .nav-links a {
+            color: #cccccc;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .nav-links a:hover {
+            color: #00ffff;
+        }
+
+        .nav-additional {
+            display: flex;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .audio-button {
+            background: linear-gradient(135deg, #ff00ff, #00ffff, #ff00ff);
+            border: 2px solid #00ffff;
+            border-radius: 50%;
+            width: 50px;
+            aspect-ratio: 1/1;
+            color: #000;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s ease;
+            box-shadow: 
+                0 0 20px rgba(255, 0, 255, 0.5),
+                0 0 40px rgba(0, 255, 255, 0.3),
+                inset 0 0 20px rgba(255, 255, 255, 0.1);
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            animation: retroPulse 2s infinite alternate;
+        }
+        .audio-button.playing {
+            background: linear-gradient(135deg, #ff00ff, #ffff00, #00ffff);
+            border-color: #ffff00;
+            box-shadow: 
+                0 0 30px rgba(255, 0, 255, 0.8),
+                0 0 60px rgba(255, 255, 0, 0.5),
+                0 0 80px rgba(0, 255, 255, 0.3),
+                inset 0 0 30px rgba(255, 255, 255, 0.2);
+            animation: rotate360 3s linear infinite;
+        }
+
+        .audio-button:hover {
+            transform: scale(1.1);
+        }
+
+.audio-button:active {
+  transform: scale(0.95);
+  box-shadow: 
+    0 0 15px rgba(255, 0, 255, 1),
+    inset 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.audio-button::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00, #ff00ff);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.9;
+    animation: rotate360 3s linear infinite;
+}
+
+@keyframes retroPulse {
+  0% {
+    box-shadow: 
+      0 0 20px rgba(255, 0, 255, 0.5),
+      0 0 40px rgba(0, 255, 255, 0.3),
+      inset 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    box-shadow: 
+      0 0 30px rgba(255, 0, 255, 0.8),
+      0 0 60px rgba(0, 255, 255, 0.5),
+      inset 0 0 30px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
