@@ -57,6 +57,7 @@ export default function TopBar() {
                     <li><a href='#about' onClick={closeMenu}>{text[0]}</a></li>
                     <li><a href="#projects" onClick={closeMenu}>{text[1]}</a></li>
                     <li><a href="#skills" onClick={closeMenu}>{text[2]}</a></li>
+                    <li><a href="#contact" onClick={closeMenu}>{text[3]}</a></li>
                 </ul>
 
                 {/* Additional nav items */}

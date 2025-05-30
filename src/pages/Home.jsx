@@ -109,9 +109,7 @@ return (
                         <a href="../../public/Cv-Luca-Di-Bene.pdf" download="Cv Luca Di Bene.pdf">
                             <Button variant="primary">{t('downloadCV')}</Button>
                         </a>
-                        <a href="#contact">
-                            <Button variant="secondary">{t('contact')}</Button>
-                        </a>
+                        
 
                     </div>
                 </div>
@@ -169,7 +167,11 @@ return (
         <div className="divider"></div>
         
         <section id="contact" className="section">
-            <ContactForm />
+            <div className="container">
+                <h2 className="section-title">{t('contact')}</h2>
+                <div className="section-divider"></div>
+                <ContactForm />
+            </div>
         </section>
         <footer className="footer">
             <div className="footer-logo">&lt;KUKE-DEV/&gt;</div>

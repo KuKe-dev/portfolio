@@ -1,9 +1,8 @@
 export const en = {
-    topBar: `["ABOUT", "PROJECTS", "SKILLS"]`,
+    topBar: `["ABOUT", "PROJECTS", "SKILLS", "CONTACT"]`,
     developer: "Developer",
     description: "I'm a full-stack developer passionate about creating innovative digital experiences. With expertise in modern technologies like React, Java, and JavaScript, I specialize in building robust and scalable web applications that combine exceptional functionality with appealing design.",
     downloadCV: "DONWLOAD CV",
-    contact: "CONTACT",
     projects: "PROJECTS",
     arrayProjects: `[
         {
@@ -17,6 +16,7 @@ export const en = {
     ]`,
     projectCardBtns: `["SHOW DEMO", "CODE"]`,
     skills: "SKILLS",
+    contact: "CONTACT",
     contactFormInputs: `[
         {
             "label": "Name*",

@@ -35,7 +35,7 @@
             align-items: center;
             justify-content: center;
             padding: 0 2rem;
-            padding-top: 120px;
+            padding-top: 100px;
         }
 
         .container {
@@ -50,9 +50,9 @@
         }
 
         .main-title {
-            font-family: '80s Font';
-            font-size: 4rem;
-            margin-bottom: 1rem;
+            font-family: 'Astroz';
+            font-size: 6rem;
+            margin-bottom: 10px;
             background: linear-gradient(45deg, #ff1493, #9932cc, #00ffff);
             -webkit-background-clip: text;
             background-clip: text;
@@ -64,8 +64,7 @@
         .subtitle {
             font-size: clamp(1.2rem, 3vw, 2rem);
             color: #00ffff;
-            margin-bottom: 3rem;
-            height: 3rem;
+            margin-bottom: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -85,13 +84,13 @@
             width: 230px;
             aspect-ratio: 1/1;
             overflow: hidden;
-            margin: 0 auto 3rem;
+            margin: 0 auto;
+            margin-bottom: 30px;
             border-radius: 50%;
             background: linear-gradient(45deg, #ff1493, #00ffff);
 
             background-size: cover;
             background-position: start;
-            padding: 4px;
             border: 3px solid #ff00ee;
             box-shadow: 0 4px 30px #ff00b3;
             transition: all 0.3s ease;
@@ -122,7 +121,7 @@
 
         .description {
             max-width: 600px;
-            margin: 0 auto 3rem;
+            margin: 0 auto 30px;
             font-size: 1.1rem;
             line-height: 1.6;
             color: #cccccc;
@@ -137,11 +136,13 @@
 
         /* Section Titles */
         .section-title {
-            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-size: 5rem;
+            font-family: "80s Font";
             font-weight: bold;
             text-align: center;
             margin-bottom: 1rem;
             background: linear-gradient(45deg, #ff1493, #00ffff);
+            text-shadow: 0 4px 30px #ff00b392;
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
