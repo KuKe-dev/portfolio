@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 import './ContactForm.css'
+import { useLanguage } from '../../contexts/LanguageContext';
 
 export default function ContactForm() {
     const [showSuccess, setShowSuccess] = useState(false);
     const [showError, setShowError] = useState(false);
+
+    const { t } = useLanguage();
+
+    const inputs = JSON.parse(t('contactFormInputs'));
+    const btn = JSON.parse(t('contactFormBtn'));
 
     function submitForm(e) {
         e.preventDefault();
@@ -45,29 +51,29 @@ export default function ContactForm() {
         <>
             <form onSubmit={submitForm} id="formulario-contacto" className="synthwave-form">
                 <div className="form-group">
-                    <label htmlFor="nombre">Nombre*:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder='Ingresa tu nombre' required />
+                    <label htmlFor="nombre">{inputs[0].label}:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder={inputs[0].placeholder} required />
                 </div>
                 
                 <div className="form-group">
-                    <label htmlFor="email">Email*:</label>
-                    <input type="email" id="email" name="email" placeholder='Ingresa tu email' required />
+                    <label htmlFor="email">{inputs[1].label}:</label>
+                    <input type="email" id="email" name="email" placeholder={inputs[1].placeholder} required />
                 </div>
                 
                 <div className="form-group">
-                    <label htmlFor="asunto">Asunto:</label>
-                    <input type="text" id="asunto" name="asunto" placeholder='Ingresa el asunto' />
+                    <label htmlFor="asunto">{inputs[2].label}:</label>
+                    <input type="text" id="asunto" name="asunto" placeholder={inputs[2].placeholder} />
                 </div>
                 
                 <div className="form-group">
-                    <label htmlFor="mensaje">Mensaje*:</label>
-                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    <label htmlFor="mensaje">{inputs[3].label}:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder={inputs[3].placeholder} required></textarea>
                 </div>
                 
                 <div className="button-group">
-                    <button type="submit" className="btn-primary">Enviar Mensaje</button>
+                    <button type="submit" className="btn-primary">{btn[0]}</button>
                     <button type="button" onClick={() => document.getElementById('formulario-contacto').reset() } className="btn-secondary">
-                        Cancelar
+                        {btn[1]}
                     </button>
                 </div>
             </form>
@@ -78,7 +84,7 @@ export default function ContactForm() {
                     <div className="message-content">
                         <div className="message-icon">✓</div>
                         <div className="message-text">
-                            ¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.
+                            {t('contactFormSuccess')}
                         </div>
                     </div>
                 </div>
@@ -89,7 +95,7 @@ export default function ContactForm() {
                     <div className="message-content">
                         <div className="message-icon">⚠</div>
                         <div className="message-text">
-                            Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.
+                            {t('contactFormError')}
                         </div>
                     </div>
                 </div>

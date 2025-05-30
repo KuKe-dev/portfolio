@@ -163,7 +163,7 @@ return (
         </section>
         <footer className="footer">
             <div className="footer-logo">&lt;KUKE-DEV/&gt;</div>
-            <p className="footer-text">Creando el futuro, una línea de código a la vez.</p>
+            <p className="footer-text">{t('footerMessage')}</p>
             <div className="social-links">
                 <button className="social-btn social-email">📧</button>
                 <button className="social-btn social-linkedin">💼</button>
@@ -171,7 +171,7 @@ return (
             </div>
         </footer>
 
-        <button className="scroll-btn">🚀</button>
+
 
         <div className="bottom-grid"></div>
 

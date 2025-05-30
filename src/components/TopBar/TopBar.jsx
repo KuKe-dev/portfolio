@@ -9,7 +9,9 @@ export default function TopBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const text = JSON.parse(t('topBar'));
 
-    function handleAudioButtonClick() {
+    function handleAudioButtonClick(e) {
+        e.preventDefault();
+
         const aud = document.getElementById("audio");
         const btn = document.querySelector(".audio-button");
         if (aud.paused) {
@@ -59,7 +61,7 @@ export default function TopBar() {
 
                 {/* Additional nav items */}
                 <ul className={`nav-additional ${isMenuOpen ? 'active' : ''}`}>
-                    <button className="audio-button" onClick={handleAudioButtonClick}> ▶ </button>
+                    <button className="audio-button" onClick={e => handleAudioButtonClick(e)}> ▶ </button>
                     <LanguageSelector />
                 </ul>
                 

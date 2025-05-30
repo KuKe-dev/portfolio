@@ -9,7 +9,7 @@ export const en = {
         {
             "title": "God of War - API",
             "year": "2025",
-            "description": "Dive into the legendary world of Kratos with this powerful RESTful API! Unleash the might of Sparta by fetching detailed info about gods, warriors, and mythical realms from the iconic God of War universe./n/ I built this project to conquer two key challenges: mastering API development with Express.js and harnessing the power of web scraping tools like Cheerio. It was the perfect battlefield to learn backend structure, data extraction, and scalable design—all while paying tribute to one of gaming's greatest sagas. Devs and fans, come feast on the spoils of war!",
+            "description": "Dive into the legendary world of Kratos with this powerful RESTful API! Unleash the might of Sparta by fetching detailed info about gods, warriors, and mythical realms from the iconic God of War universe. I built this project to conquer two key challenges: mastering API development with Express.js and harnessing the power of web scraping tools like Cheerio. It was the perfect battlefield to learn backend structure, data extraction, and scalable design—all while paying tribute to one of gaming's greatest sagas. Devs and fans, come feast on the spoils of war!",
             "techs": ["JavaScript", "Node.js", "Express.js", "Web Scraping tools"],
             "demo": "https://god-of-war-api.vercel.app",
             "code": "https://github.com/KuKe-dev/god-of-war-api"
@@ -17,4 +17,26 @@ export const en = {
     ]`,
     projectCardBtns: `["SHOW DEMO", "CODE"]`,
     skills: "SKILLS",
+    contactFormInputs: `[
+        {
+            "label": "Name*",
+            "placeholder": "Enter your name"
+        },
+        {
+            "label": "Email*",
+            "placeholder": "Enter your email"
+        },
+        {
+            "label": "Subject",
+            "placeholder": "Enter a subject"
+        },
+        {
+            "label": "Message*",
+            "placeholder": "Enter your message"
+        }
+    ]`,
+    contactFormBtn: `["SEND MESSAGE", "CANCEL"]`,
+    contactFormSuccess: "Message sent successfully! I'll get back to you as soon as possible.",
+    contactFormError: "Error sending message. Please try again later.",
+    footerMessage: "Creating the future, one line of code at a time"
 };
