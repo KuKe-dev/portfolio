@@ -16,6 +16,7 @@ import cssLogo from '../assets/svg/css.svg'
 import jsLogo from '../assets/svg/javascript.svg'
 import javaLogo from '../assets/svg/java.svg'
 import springLogo from '../assets/svg/springBoot.svg'
+import sqlLogo from '../assets/svg/sql.svg'
 import gitLogo from '../assets/svg/git.svg'
 import emailLogo from '../assets/svg/email.svg'
 import linkedinLogo from '../assets/svg/linkedin.svg'
@@ -65,6 +66,12 @@ export default function Home() {
         color: "green",
         icon: springLogo,
         link: "https://spring.io/"
+    },
+    {
+        name: "SQL", 
+        color: "violet",
+        icon: sqlLogo,
+        link: "https://www.mysql.com/"
     },
     { 
         name: "GIT", 
