@@ -1,7 +1,7 @@
 export const es = {
     topBar: `["ACERCA DE", "PROYECTOS", "HABILIDADES", "CONTACTO"]`,
     developer: "Desarrollador",
-    description: "Soy un desarrollador full-stack apasionado por crear experiencias digitales innovadoras. Con expertise en tecnologías modernas como React, Java y JavaScript, me especializo en construir aplicaciones web robustas y escalables que combinan funcionalidad excepcional con diseño atractivo.",
+    description: "Soy un desarrollador full-stack apasionado por crear experiencias digitales innovadoras. Con expertiz en tecnologías modernas como React, Java y JavaScript, me especializo en construir aplicaciones web robustas y escalables que combinan funcionalidad excepcional con diseño atractivo.",
     downloadCV: "DESCARGAR CV",
     projects: "PROYECTOS",
     arrayProjects: `[

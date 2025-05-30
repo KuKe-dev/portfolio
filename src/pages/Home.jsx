@@ -22,7 +22,6 @@ import emailLogo from '../assets/svg/email.svg'
 import linkedinLogo from '../assets/svg/linkedin.svg'
 import githubLogo from '../assets/svg/github.svg'
 
-
 export default function Home() {
 
     const { t } = useLanguage();
