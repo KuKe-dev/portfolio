@@ -8,6 +8,7 @@ import TopBar from '../components/TopBar/TopBar.jsx';
 import Button from '../components/Button/Button.jsx';
 import Background from '../components/Background/Background.jsx';
 import ProjectCard from '../components/ProjectCard/ProjectCard.jsx';
+import ContactForm from '../components/ContactForm/ContactForm.jsx';
 
 import reactLogo from '../assets/svg/react.svg'
 import htmlLogo from '../assets/svg/html.svg'
@@ -16,7 +17,9 @@ import jsLogo from '../assets/svg/javascript.svg'
 import javaLogo from '../assets/svg/java.svg'
 import springLogo from '../assets/svg/springBoot.svg'
 import gitLogo from '../assets/svg/git.svg'
-import ContactForm from '../components/ContactForm/ContactForm.jsx';
+import emailLogo from '../assets/svg/email.svg'
+import linkedinLogo from '../assets/svg/linkedin.svg'
+import githubLogo from '../assets/svg/github.svg'
 
 
 export default function Home() {
@@ -165,13 +168,11 @@ return (
             <div className="footer-logo">&lt;KUKE-DEV/&gt;</div>
             <p className="footer-text">{t('footerMessage')}</p>
             <div className="social-links">
-                <button className="social-btn social-email">📧</button>
-                <button className="social-btn social-linkedin">💼</button>
-                <button className="social-btn social-github">🐙</button>
+                <button onClick={() => window.open("mailto:lucadibene08@gmail.com", "_blank")} className="social-btn social-email"><img src={emailLogo} alt='Email' style={{width: "65%"}} /></button>
+                <button onClick={() => window.open("https://www.linkedin.com/in/luca-di-bene/", "_blank")} className="social-btn social-linkedin"><img src={linkedinLogo} alt="LinkedIn" style={{width: "55%"}} /></button>
+                <button onClick={() => window.open("https://github.com/KuKe-dev", "_blank")} className="social-btn social-github"><img src={githubLogo} alt="GitHub" style={{width: "60%"}} /></button>
             </div>
         </footer>
-
-
 
         <div className="bottom-grid"></div>
 

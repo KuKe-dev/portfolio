@@ -12,10 +12,10 @@ const LanguageSelector = () => {
     en: {
       flag: 'https://flagcdn.com/32x24/us.png',
       name: 'English',
-      code: 'US'
+      code: 'EN'
     },
     es: {
-      flag: 'https://flagcdn.com/32x24/es.png',
+      flag: 'https://flagcdn.com/32x24/ar.png',
       name: 'Español',
       code: 'ES'
     },
