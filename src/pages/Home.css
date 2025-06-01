@@ -267,8 +267,7 @@
     border: 2px solid transparent;
     border-radius: 15px;
     padding: 1.5rem 2rem;
-    min-width: 175px;
-    width: fit-content;
+    width: 160px;
     transition: all 0.4s ease;
     cursor: pointer;
     overflow: hidden;
@@ -468,6 +467,15 @@
         font-size: 4rem;
     }
 
+    .skill-item {
+        width: 140px;
+        padding: 1rem 1rem;
+    }
+
+    .skill-name {
+        font-size: 0.8rem;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -485,11 +493,13 @@
     }
 
     .skill-item {
+        width: 120px;
         padding: 1rem 1rem;
+        font-size: 2rem;
     }
     
-    .skill-icon {
-        font-size: 2.2rem;
+    .skill-name {
+        font-size: 0.8rem;
     }
 }
     
