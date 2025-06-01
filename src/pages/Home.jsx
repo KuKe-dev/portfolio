@@ -97,7 +97,7 @@ return (
                     </div>
                     
                     <div className="profile-image-container" onClick={e => {e.target.classList.add("spin");setTimeout(() => {e.target.classList.remove("spin")}, 2000)}} >
-                        <img className="profile-image" src={avatar} alt="👨‍💻" style={{width: "100%"}} />
+                        <img className="profile-image" src={avatar} alt="👨‍💻" />
                     </div>
 
                     <p className="description">

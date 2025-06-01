@@ -455,6 +455,10 @@
 /* Responsive para skills */
 @media (max-width: 768px) {
 
+    .profile-image-container {
+        width: 180px;
+    }
+
     .main-title {
         font-size: 4rem;
     }
@@ -479,6 +483,10 @@
 }
 
 @media (max-width: 480px) {
+
+    .profile-image-container {
+        width: 160px;
+    }
 
     .main-title {
         font-size: 3rem;
