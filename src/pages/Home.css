@@ -267,7 +267,8 @@
     border: 2px solid transparent;
     border-radius: 15px;
     padding: 1.5rem 2rem;
-    min-width: 160px;
+    min-width: 175px;
+    width: fit-content;
     transition: all 0.4s ease;
     cursor: pointer;
     overflow: hidden;
@@ -375,6 +376,83 @@
     opacity: 1;
 }
 
+/* Footer */
+.footer {
+    background: rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #00ffff;
+    padding: 3rem 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff1493, #00ffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    margin-bottom: 1rem;
+}
+
+.footer-text {
+    color: #999;
+
+    margin: 0 40px 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: none;
+    color: white;
+}
+
+.social-email { background: linear-gradient(45deg, #ff1493, #9932cc); }
+.social-linkedin { background: linear-gradient(45deg, #06b6d4, #3b82f6); }
+.social-github { background: linear-gradient(45deg, #9932cc, #ff1493); }
+
+.social-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Scroll Button */
+.scroll-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #ff1493, #00ffff);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 20;
+}
+
+.scroll-btn:hover {
+    transform: scale(1.1);
+}
+
+
 /* Responsive para skills */
 @media (max-width: 768px) {
 
@@ -390,23 +468,6 @@
         font-size: 4rem;
     }
 
-
-    .skills-flex {
-        gap: 1rem;
-    }
-    
-    .skill-item {
-        min-width: 140px;
-        padding: 1.2rem 1.5rem;
-    }
-    
-    .skill-icon {
-        font-size: 2rem;
-    }
-    
-    .skill-name {
-        font-size: 0.9rem;
-    }
 }
 
 @media (max-width: 480px) {
@@ -423,95 +484,15 @@
         font-size: 3rem;
     }
 
-    .skills-flex {
-        flex-direction: column;
-        align-items: center;
-    }
-    
     .skill-item {
-        width: 200px;
+        padding: 1rem 1rem;
     }
     
     .skill-icon {
         font-size: 2.2rem;
     }
 }
-        
-
-        /* Footer */
-        .footer {
-            background: rgba(0, 0, 0, 0.5);
-            border-top: 1px solid #00ffff;
-            padding: 3rem 0;
-            text-align: center;
-            position: relative;
-            z-index: 10;
-        }
-
-        .footer-logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            background: linear-gradient(45deg, #ff1493, #00ffff);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: transparent;
-            margin-bottom: 1rem;
-        }
-
-        .footer-text {
-            color: #999;
-            margin-bottom: 2rem;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-        }
-
-        .social-btn {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            border: none;
-            color: white;
-        }
-
-        .social-email { background: linear-gradient(45deg, #ff1493, #9932cc); }
-        .social-linkedin { background: linear-gradient(45deg, #06b6d4, #3b82f6); }
-        .social-github { background: linear-gradient(45deg, #9932cc, #ff1493); }
-
-        .social-btn:hover {
-            transform: scale(1.1);
-        }
-
-        /* Scroll Button */
-        .scroll-btn {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(45deg, #ff1493, #00ffff);
-            border: none;
-            border-radius: 50%;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            z-index: 20;
-        }
-
-        .scroll-btn:hover {
-            transform: scale(1.1);
-        }
+    
 
 
         /* Responsive */
