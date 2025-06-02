@@ -480,6 +480,31 @@
         font-size: 0.8rem;
     }
 
+    .nav-links {
+    gap: 1rem;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
+
+    .tech-tags {
+        gap: 0.5rem;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -510,33 +535,3 @@
         font-size: 0.8rem;
     }
 }
-    
-
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .nav-links {
-                gap: 1rem;
-            }
-
-            .nav-links a {
-                font-size: 0.8rem;
-            }
-
-            .buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .project-buttons {
-                flex-direction: column;
-            }
-
-            .social-links {
-                gap: 1rem;
-            }
-
-            .tech-tags {
-                gap: 0.5rem;
-            }
-        }
