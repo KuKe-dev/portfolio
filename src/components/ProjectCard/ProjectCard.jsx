@@ -53,7 +53,7 @@ return(
     <>
         <dialog id={`expanded-project-card-${title}`} className="expanded-project-card">
             <div className="dialog-content">
-                <button className="close-button" onClick={() => document.getElementById('expanded-project-card').close()}>×</button>
+                <button className="close-button" onClick={() => document.getElementById(`expanded-project-card-${title}`).close()}>×</button>
                 
                 <div className="dialog-header">
                     <span className="dialog-year">{year}</span>
