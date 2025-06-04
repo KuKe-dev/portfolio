@@ -51,7 +51,7 @@ export default function ProjectCard({year, title, description, techs, demo, code
 
 return(
     <>
-        <dialog id='expanded-project-card' className="expanded-project-card">
+        <dialog id={`expanded-project-card-${title}`} className="expanded-project-card">
             <div className="dialog-content">
                 <button className="close-button" onClick={() => document.getElementById('expanded-project-card').close()}>×</button>
                 
@@ -97,7 +97,7 @@ return(
                 {showViewMore && (
                     <button
                         className="view-more-button"
-                        onClick={() => document.getElementById('expanded-project-card').showModal()}
+                        onClick={() => document.getElementById(`expanded-project-card-${title}`).showModal()}
                     >
                         View More
                     </button>
