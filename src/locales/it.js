@@ -6,6 +6,14 @@ export const it = {
     projects: "PROGETTI",
     arrayProjects: `[
         {
+            "title": "GoTrip",
+            "year": "2025",
+            "description": "Bienvenido a goTrip! Tu diario de aventuras, recuerdos y lugares favoritos alrededor del mundo. Guarda momentos y compártelos con el mundo. Explora el mapa y crea nuevos sueños a donde viajar.",
+            "techs": ["React", "Java", "Spring Boot", "SQL"],
+            "demo": "https://gotrip-kuke.vercel.app",
+            "code": "https://github.com/KuKe-dev/GoTrip"
+        },
+        {
             "title": "God of War - API",
             "year": "2025",
             "description": "Tuffati nel leggendario mondo di Kratos con questa potente API RESTful! Scatena la potenza di Sparta recuperando informazioni dettagliate su divinità, guerrieri e reami mitici dell'iconico universo di God of War. Ho creato questo progetto per affrontare due sfide chiave: padroneggiare lo sviluppo di API con Express.js e sfruttare il potere di strumenti di web scraping come Cheerio. È stato il campo di battaglia perfetto per imparare la struttura del backend, l'estrazione dei dati e il design scalabile, il tutto rendendo omaggio a una delle più grandi saghe videoludiche. Sviluppatori e fan, venite a godervi il bottino di guerra!",
