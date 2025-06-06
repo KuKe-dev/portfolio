@@ -8,7 +8,7 @@ export const en = {
         {
             "title": "GoTrip",
             "year": "2025",
-            "description": "Bienvenido a goTrip! Tu diario de aventuras, recuerdos y lugares favoritos alrededor del mundo. Guarda momentos y compártelos con el mundo. Explora el mapa y crea nuevos sueños a donde viajar.",
+            "description": "GoTrip is a fullstack web application designed for travelers to document and share their adventures on an interactive map, offering a unique visualization of their journeys. I developed the project solo, using React for the frontend and Java/Spring Boot (to learn backend with a robust language) along with MySQL (due to my personal preference for relational databases). Although the project didn’t solve a critical technical problem, its value lies in the enhanced user experience, allowing users to mark and explore their trips geographically. It was a practical exercise to master frontend-backend integration as well as handling spatial data.",
             "techs": ["React", "Java", "Spring Boot", "SQL"],
             "demo": "https://gotrip-kuke.vercel.app",
             "code": "https://github.com/KuKe-dev/GoTrip"
@@ -16,7 +16,7 @@ export const en = {
         {
             "title": "God of War - API",
             "year": "2025",
-            "description": "Dive into the legendary world of Kratos with this powerful RESTful API! Unleash the might of Sparta by fetching detailed info about gods, warriors, and mythical realms from the iconic God of War universe. I built this project to conquer two key challenges: mastering API development with Express.js and harnessing the power of web scraping tools like Cheerio. It was the perfect battlefield to learn backend structure, data extraction, and scalable design—all while paying tribute to one of gaming's greatest sagas. Devs and fans, come feast on the spoils of war!",
+            "description": "This RESTful API provides detailed information about characters from the God of War saga, obtained through web scraping (using Cheerio) from the game’s official wiki. The project was developed with React and Node.js/Express for the backend, demonstrating my ability to extract, structure, and serve non-traditional data. The key takeaway was mastering web scraping in dynamic environments and setting up functional deployments.",
             "techs": ["JavaScript", "Node.js", "Express.js", "Web Scraping tools"],
             "demo": "https://god-of-war-api.vercel.app",
             "code": "https://github.com/KuKe-dev/god-of-war-api"

@@ -8,7 +8,7 @@ export const it = {
         {
             "title": "GoTrip",
             "year": "2025",
-            "description": "Bienvenido a goTrip! Tu diario de aventuras, recuerdos y lugares favoritos alrededor del mundo. Guarda momentos y compártelos con el mundo. Explora el mapa y crea nuevos sueños a donde viajar.",
+            "description": "GoTrip è un'applicazione web fullstack progettata per permettere ai viaggiatori di documentare e condividere le proprie avventure su una mappa interattiva, offrendo una visualizzazione unica dei loro percorsi. Ho sviluppato il progetto da solo, utilizzando React per il frontend e Java/Spring Boot (per imparare il backend con un linguaggio robusto) insieme a MySQL (per una mia preferenza personale verso i database relazionali). Sebbene il progetto non abbia risolto un problema tecnico critico, il suo valore risiede nell'esperienza utente migliorata, permettendo agli utenti di segnare ed esplorare i propri viaggi geograficamente. È stato un esercizio pratico per padroneggiare l'integrazione tra frontend e backend, oltre che la gestione di dati spaziali.",
             "techs": ["React", "Java", "Spring Boot", "SQL"],
             "demo": "https://gotrip-kuke.vercel.app",
             "code": "https://github.com/KuKe-dev/GoTrip"
@@ -16,7 +16,7 @@ export const it = {
         {
             "title": "God of War - API",
             "year": "2025",
-            "description": "Tuffati nel leggendario mondo di Kratos con questa potente API RESTful! Scatena la potenza di Sparta recuperando informazioni dettagliate su divinità, guerrieri e reami mitici dell'iconico universo di God of War. Ho creato questo progetto per affrontare due sfide chiave: padroneggiare lo sviluppo di API con Express.js e sfruttare il potere di strumenti di web scraping come Cheerio. È stato il campo di battaglia perfetto per imparare la struttura del backend, l'estrazione dei dati e il design scalabile, il tutto rendendo omaggio a una delle più grandi saghe videoludiche. Sviluppatori e fan, venite a godervi il bottino di guerra!",
+            "description": "Questa API RESTful fornisce informazioni dettagliate sui personaggi della saga God of War, ottenute tramite web scraping (usando Cheerio) dalla wiki ufficiale del gioco. Il progetto è stato sviluppato con React e Node.js/Express per il backend, dimostrando la mia capacità di estrarre, strutturare e servire dati non tradizionali. L'apprendimento principale è stato padroneggiare lo scraping web in ambienti dinamici e configurare deployment funzionali.",
             "techs": ["JavaScript", "Node.js", "Express.js", "Strumenti di Web Scraping"],
             "demo": "https://god-of-war-api.vercel.app",
             "code": "https://github.com/KuKe-dev/god-of-war-api"
