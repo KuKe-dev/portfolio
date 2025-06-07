@@ -16,7 +16,7 @@ export const it = {
         {
             "title": "God of War - API",
             "year": "2025",
-            "description": "Questa API RESTful fornisce informazioni dettagliate sui personaggi della saga God of War, ottenute tramite web scraping (usando Cheerio) dalla wiki ufficiale del gioco. Il progetto è stato sviluppato con React e Node.js/Express per il backend, dimostrando la mia capacità di estrarre, strutturare e servire dati non tradizionali. L'apprendimento principale è stato padroneggiare lo scraping web in ambienti dinamici e configurare deployment funzionali.",
+            "description": "Questa API fornisce informazioni dettagliate sui personaggi della saga God of War, ottenute tramite web scraping (usando Cheerio) dalla wiki ufficiale del gioco. Il progetto è stato sviluppato con React e Node.js/Express per il backend, dimostrando la mia capacità di estrarre, strutturare e servire dati non tradizionali. L'apprendimento principale è stato padroneggiare lo scraping web in ambienti dinamici e configurare deployment funzionali.",
             "techs": ["JavaScript", "Node.js", "Express.js", "Tool di Web Scraping"],
             "demo": "https://god-of-war-api.vercel.app",
             "code": "https://github.com/KuKe-dev/god-of-war-api"
