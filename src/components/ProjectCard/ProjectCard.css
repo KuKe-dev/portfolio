@@ -4,7 +4,6 @@
     border-radius: 12px;
     padding: 1.5rem;
     transition: all 0.5s ease;
-    cursor: pointer;
     width: 100%;
     max-width: 500px;
 }
@@ -38,6 +37,7 @@
     background: linear-gradient(45deg, #00ffff, #ff1493) border-box;
     background-clip: padding-box;
     transition: all 0.3s ease;
+    cursor: pointer;
     filter: brightness(0.8) contrast(1.1);
 }
 
@@ -80,6 +80,7 @@
 .project-buttons .btn {
     flex: 1;
     text-align: center;
+    cursor: pointer;
     padding: 0.6rem 1rem;
     font-size: 0.8rem;
 }
