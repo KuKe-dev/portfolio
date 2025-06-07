@@ -1,7 +1,7 @@
 export const es = {
     topBar: `["ACERCA DE", "PROYECTOS", "HABILIDADES", "CONTACTO"]`,
     developer: "Desarrollador",
-    description: "Soy un desarrollador full-stack apasionado por crear experiencias digitales innovadoras. Con expertiz en tecnologías modernas como React, Java y JavaScript, me especializo en construir aplicaciones web robustas y escalables que combinan funcionalidad excepcional con diseño atractivo.",
+    description: "Soy un desarrollador fullstack apasionado por crear experiencias digitales innovadoras. Con expertiz en tecnologías modernas como React, Java y JavaScript, me especializo en construir aplicaciones web robustas y escalables que combinan funcionalidad excepcional con diseño atractivo.",
     downloadCV: "DESCARGAR CV",
     projects: "PROYECTOS",
     arrayProjects: `[
@@ -46,5 +46,5 @@ export const es = {
     contactFormBtn: `["ENVIAR MENSAJE", "CANCELAR"]`,
     contactFormSuccess: "¡Mensaje enviado con éxito! Me pondré en contacto contigo lo antes posible.",
     contactFormError: "Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.",
-    footerMessage: "Creado el futuro, una linea de código a la vez"
+    footerMessage: "Creando el futuro, una linea de código a la vez"
 };

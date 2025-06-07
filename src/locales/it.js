@@ -1,7 +1,7 @@
 export const it = {
-    topBar: `["INFO", "PROGETTI", "COMPETENZE", "CONTATTO"]`,
+    topBar: `["INFO", "PROGETTI", "COMPETENZE", "CONTATTI"]`,
     developer: "Sviluppatore",
-    description: "Sono uno sviluppatore full-stack appassionato di creare esperienze digitali innovative. Con esperienza in tecnologie moderne come React, Java e JavaScript, mi specializzo nella creazione di applicazioni web robuste e scalabili che uniscono funzionalità eccezionale a un design accattivante.",
+    description: "Sono uno sviluppatore fullstack appassionato di creare esperienze digitali innovative. Con esperienza in tecnologie moderne come React, Java e JavaScript, mi specializzo nella creazione di applicazioni web robuste e scalabili che uniscono funzionalità eccezionale a un design accattivante.",
     downloadCV: "SCARICA CV",
     projects: "PROGETTI",
     arrayProjects: `[
@@ -17,14 +17,14 @@ export const it = {
             "title": "God of War - API",
             "year": "2025",
             "description": "Questa API RESTful fornisce informazioni dettagliate sui personaggi della saga God of War, ottenute tramite web scraping (usando Cheerio) dalla wiki ufficiale del gioco. Il progetto è stato sviluppato con React e Node.js/Express per il backend, dimostrando la mia capacità di estrarre, strutturare e servire dati non tradizionali. L'apprendimento principale è stato padroneggiare lo scraping web in ambienti dinamici e configurare deployment funzionali.",
-            "techs": ["JavaScript", "Node.js", "Express.js", "Strumenti di Web Scraping"],
+            "techs": ["JavaScript", "Node.js", "Express.js", "Tool di Web Scraping"],
             "demo": "https://god-of-war-api.vercel.app",
             "code": "https://github.com/KuKe-dev/god-of-war-api"
         }
     ]`,
-    projectCardBtns: `["MOSTRA DEMO", "CODICE"]`,
+    projectCardBtns: `["VEDI DEMO", "CODICE"]`,
     skills: "COMPETENZE",
-    contact: "CONTATTO",
+    contact: "CONTATTI",
     contactFormInputs: `[
         {
             "label": "Nome*",
@@ -46,5 +46,5 @@ export const it = {
     contactFormBtn: `["INVIA MESSAGGIO", "ANNULLA"]`,
     contactFormSuccess: "Messaggio inviato con successo! Ti risponderò il prima possibile.",
     contactFormError: "Errore durante l'invio del messaggio. Riprova più tardi.",
-    footerMessage: "Crea il futuro, una linea di codice alla volta"
+    footerMessage: "Costruisci il futuro, una riga di codice alla volta"
 };

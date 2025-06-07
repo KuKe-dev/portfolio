@@ -1,8 +1,8 @@
 export const en = {
     topBar: `["ABOUT", "PROJECTS", "SKILLS", "CONTACT"]`,
     developer: "Developer",
-    description: "I'm a full-stack developer passionate about creating innovative digital experiences. With expertise in modern technologies like React, Java, and JavaScript, I specialize in building robust and scalable web applications that combine exceptional functionality with appealing design.",
-    downloadCV: "DONWLOAD CV",
+    description: "I'm a fullstack developer passionate about creating innovative digital experiences. With expertise in modern technologies like React, Java, and JavaScript, I specialize in building robust and scalable web applications that combine exceptional functionality with appealing design.",
+    downloadCV: "DOWNLOAD CV",
     projects: "PROJECTS",
     arrayProjects: `[
         {
@@ -17,12 +17,12 @@ export const en = {
             "title": "God of War - API",
             "year": "2025",
             "description": "This RESTful API provides detailed information about characters from the God of War saga, obtained through web scraping (using Cheerio) from the game’s official wiki. The project was developed with React and Node.js/Express for the backend, demonstrating my ability to extract, structure, and serve non-traditional data. The key takeaway was mastering web scraping in dynamic environments and setting up functional deployments.",
-            "techs": ["JavaScript", "Node.js", "Express.js", "Web Scraping tools"],
+            "techs": ["JavaScript", "Node.js", "Express.js", "Web Scraping Tools"],
             "demo": "https://god-of-war-api.vercel.app",
             "code": "https://github.com/KuKe-dev/god-of-war-api"
         }
     ]`,
-    projectCardBtns: `["SHOW DEMO", "CODE"]`,
+    projectCardBtns: `["VIEW DEMO", "CODE"]`,
     skills: "SKILLS",
     contact: "CONTACT",
     contactFormInputs: `[
