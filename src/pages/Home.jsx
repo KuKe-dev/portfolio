@@ -22,6 +22,8 @@ import emailLogo from '../assets/svg/email.svg'
 import linkedinLogo from '../assets/svg/linkedin.svg'
 import githubLogo from '../assets/svg/github.svg'
 
+import cvPdf from '../../public/Cv-Luca-Di-Bene.pdf'
+
 export default function Home() {
 
     const { t } = useLanguage();
@@ -105,7 +107,7 @@ return (
                     </p>
 
                     <div className="buttons">
-                        <a href="../../public/Cv-Luca-Di-Bene.pdf" download="Cv Luca Di Bene.pdf">
+                        <a href={cvPdf} download="Cv Luca Di Bene.pdf">
                             <Button variant="primary">{t('downloadCV')}</Button>
                         </a>
                         
