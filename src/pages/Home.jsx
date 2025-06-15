@@ -107,7 +107,7 @@ return (
                     </p>
 
                     <div className="buttons">
-                        <a href={cvPdf} download="Cv Luca Di Bene.pdf">
+                        <a href={cvPdf} download="Cv Luca Di Bene">
                             <Button variant="primary">{t('downloadCV')}</Button>
                         </a>
                         
