@@ -6,6 +6,14 @@ export const it = {
     projects: "PROGETTI",
     arrayProjects: `[
         {
+            "title": "GraphNeon",
+            "year": "2025",
+            "description": "GraphNeon è un tracciatore di funzioni interattivo basato sul web. Traccia fino a 5 funzioni in tempo reale, esegui zoom avanti e indietro, muoviti sul grafico e scrivi espressioni matematiche con LaTeX. Perfetto per studenti, insegnanti e appassionati di matematica.",
+            "techs": ["React", "CSS", "LaTeX", "Canvas"],
+            "demo": "https://graphneon.vercel.app/",
+            "code": "https://github.com/KuKe-dev/graph-neon"
+        },
+        {
             "title": "GoTrip",
             "year": "2025",
             "description": "GoTrip è un'applicazione web fullstack progettata per permettere ai viaggiatori di documentare e condividere le proprie avventure su una mappa interattiva, offrendo una visualizzazione unica dei loro percorsi. Ho sviluppato il progetto da solo, utilizzando React per il frontend e Java/Spring Boot (per imparare il backend con un linguaggio robusto) insieme a MySQL (per una mia preferenza personale verso i database relazionali). Sebbene il progetto non abbia risolto un problema tecnico critico, il suo valore risiede nell'esperienza utente migliorata, permettendo agli utenti di segnare ed esplorare i propri viaggi geograficamente. È stato un esercizio pratico per padroneggiare l'integrazione tra frontend e backend, oltre che la gestione di dati spaziali.",
