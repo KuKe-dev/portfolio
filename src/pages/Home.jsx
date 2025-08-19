@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import './Home.css'
 import avatar from '../../public/Avatar.png'
+import foto from '../assets/Foto.jpeg'
 import { useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext.jsx';
 import LanguageSelector from '../components/LanguageSelector/LanguageSelector.jsx';
@@ -22,11 +23,13 @@ import emailLogo from '../assets/svg/email.svg'
 import linkedinLogo from '../assets/svg/linkedin.svg'
 import githubLogo from '../assets/svg/github.svg'
 
-import cvPdf from '../../public/Cv-Luca-Di-Bene.pdf'
+import cvEs from '../../public/Cv-Luca-Di-Bene-Es.pdf'
+import cvEn from '../../public/Cv-Luca-Di-Bene-En.pdf'
+import cvIt from '../../public/Cv-Luca-Di-Bene-It.pdf'
 
 export default function Home() {
 
-    const { t } = useLanguage();
+    const { t, language } = useLanguage();
 
     const projects = JSON.parse(t('arrayProjects'));
     console.log(projects);
@@ -82,6 +85,18 @@ export default function Home() {
     }
 ];
 
+    const cvFile = () => {
+        if (language === 'en') {
+            return cvEn;
+        }
+        if (language === 'es') {
+            return cvEs;
+        }
+        if (language === 'it') {
+            return cvIt;
+        }
+
+    };
 
 return (
     <div className='body'>
@@ -99,7 +114,7 @@ return (
                     </div>
                     
                     <div className="profile-image-container" onClick={e => {e.target.classList.add("spin");setTimeout(() => {e.target.classList.remove("spin")}, 2000)}} >
-                        <img className="profile-image" src={avatar} alt="👨‍💻" />
+                        <img className="profile-image" src={foto} alt="👨‍💻" />
                     </div>
 
                     <p className="description">
@@ -107,7 +122,7 @@ return (
                     </p>
 
                     <div className="buttons">
-                        <a href={cvPdf} download="Cv Luca Di Bene">
+                        <a href={cvFile()} download="Cv Luca Di Bene">
                             <Button variant="primary">{t('downloadCV')}</Button>
                         </a>
                         
