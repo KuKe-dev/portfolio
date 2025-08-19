@@ -22,10 +22,6 @@ import emailLogo from '../assets/svg/email.svg'
 import linkedinLogo from '../assets/svg/linkedin.svg'
 import githubLogo from '../assets/svg/github.svg'
 
-import cvEs from '../../public/Cv-Luca-Di-Bene-Es.pdf'
-import cvEn from '../../public/Cv-Luca-Di-Bene-En.pdf'
-import cvIt from '../../public/Cv-Luca-Di-Bene-It.pdf'
-
 export default function Home() {
 
     const { t, language } = useLanguage();
@@ -85,15 +81,9 @@ export default function Home() {
 ];
 
 const cvFile = () => {
-    if (language === 'en') {
-        return cvEn;
-    }
-    if (language === 'es') {
-        return cvEs;
-    }
-    if (language === 'it') {
-        return cvIt;
-    }
+    if (language === 'en') return "/Cv-Luca-Di-Bene-En.pdf";
+    if (language === 'es') return "/Cv-Luca-Di-Bene-Es.pdf";
+    if (language === 'it') return "/Cv-Luca-Di-Bene-It.pdf";
 };
 
 return (
