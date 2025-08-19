@@ -84,18 +84,17 @@ export default function Home() {
     }
 ];
 
-    const cvFile = () => {
-        if (language === 'en') {
-            return cvEn;
-        }
-        if (language === 'es') {
-            return cvEs;
-        }
-        if (language === 'it') {
-            return cvIt;
-        }
-
-    };
+const cvFile = () => {
+    if (language === 'en') {
+        return cvEn;
+    }
+    if (language === 'es') {
+        return cvEs;
+    }
+    if (language === 'it') {
+        return cvIt;
+    }
+};
 
 return (
     <div className='body'>
@@ -121,7 +120,7 @@ return (
                     </p>
 
                     <div className="buttons">
-                        <a href={cvFile()} download="Cv Luca Di Bene">
+                        <a href={cvFile()} download="Cv Luca Di Bene.pdf">
                             <Button variant="primary">{t('downloadCV')}</Button>
                         </a>
                         
